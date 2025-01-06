@@ -102,34 +102,27 @@ class _LocationPickerPageState extends State<LocationPickerPage> {
 
     return Scaffold(
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          statusBarIconBrightness:
-              darkIcons ? Brightness.light : Brightness.dark,
+  systemOverlayStyle: SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: darkIcons ? Brightness.light : Brightness.dark,
+  ),
+  backgroundColor: Colors.transparent,
+  elevation: 0,
+  iconTheme: Theme.of(context).iconTheme.copyWith(
+        color: darkIcons ? Colors.white : null,
+      ),
+  title: Text(widget.title ?? ""),
+  toolbarTextStyle: Theme.of(context).textTheme.copyWith(
+        titleLarge: TextStyle(
+          color: darkIcons ? null : Colors.black,
         ),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        iconTheme: Theme.of(context).iconTheme.copyWith(
-              color: darkIcons ? Colors.white : null,
-                    ),
-                title: Text(widget.title ?? ""),
-        toolbarTextStyle: Theme.of(context)
-    .textTheme
-    .copyWith(
-      titleLarge: TextStyle(
-        color: darkIcons ? null : Colors.black,
-      ),
-    )
-    .bodyMedium,
-titleTextStyle: Theme.of(context)
-    .textTheme
-    .copyWith(
-      titleLarge: TextStyle(
-        color: darkIcons ? null : Colors.black,
-      ),
-    )
-    .titleLarge,
-      ),
+      ).bodyMedium,
+  titleTextStyle: Theme.of(context).textTheme.copyWith(
+        titleLarge: TextStyle(
+          color: darkIcons ? null : Colors.black,
+        ),
+      ).titleLarge,
+),      
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
