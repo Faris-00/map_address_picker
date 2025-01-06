@@ -116,13 +116,14 @@ class _LocationPickerPageState extends State<LocationPickerPage> {
         titleLarge: TextStyle(
           color: darkIcons ? null : Colors.black,
         ),
-      ).bodyMedium,
+      ).bodyMedium, // Updated
   titleTextStyle: Theme.of(context).textTheme.copyWith(
         titleLarge: TextStyle(
           color: darkIcons ? null : Colors.black,
         ),
-      ).titleLarge,
-),      
+      ).titleLarge, // Updated
+),
+
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
