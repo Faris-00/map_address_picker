@@ -113,21 +113,21 @@ class _LocationPickerPageState extends State<LocationPickerPage> {
               color: darkIcons ? Colors.white : null,
                     ),
                 title: Text(widget.title ?? ""),
-               toolbarTextStyle: Theme.of(context)
-            .textTheme
-            .copyWith(
-              titleLarge: TextStyle(
-                color: darkIcons ? null : Colors.black,
-              ),
-            )
-            .bodyText2,
-        titleTextStyle: Theme.of(context)
-            .textTheme
-            .copyWith(
-              titleLarge: TextStyle(
-                color: darkIcons ? null : Colors.black,
-              ),
-            )
+        toolbarTextStyle: Theme.of(context)
+    .textTheme
+    .copyWith(
+      titleLarge: TextStyle(
+        color: darkIcons ? null : Colors.black,
+      ),
+    )
+    .bodyMedium,
+titleTextStyle: Theme.of(context)
+    .textTheme
+    .copyWith(
+      titleLarge: TextStyle(
+        color: darkIcons ? null : Colors.black,
+      ),
+    )
     .titleLarge,
       ),
       extendBodyBehindAppBar: true,
